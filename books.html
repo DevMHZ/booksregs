@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جدول الكتب</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>جدول الكتب</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>اختيار</th>
+                <th>إظهار التفاصيل</th>
+                <th>السعر</th>
+                <th>العنوان</th>
+                <th>رقم ISBN</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Book 1 -->
+            <tr>
+                <td><input type="radio" name="book" id="book1" value="قمر على الأريكة"></td>
+                <td>
+                    <button class="btn" onclick="toggleDetails(1)">إظهار التفاصيل</button>
+                    <div id="details1" class="book-details" style="display: none;">
+                        <strong>الكاتب:</strong> هاني نقشبندي<br>
+                        <strong>نبذة عن الكتاب:</strong> "قمر على الأريكة" هو كتاب يتناول مواضيع اجتماعية وإنسانية مع
+                        لمسة من الرومانسية.<br>
+                        <strong>السعر:</strong> 18000 ل.س<br>
+                        <strong>التصنيف:</strong> رواية<br>
+                        <strong>الناشر:</strong> دار الريس<br>
+                        <strong>رقم ISBN:</strong> 987-6543210987<br>
+                        <img src="https://th.bing.com/th/id/OIP.Uxb56Xw0Ny2ipz0aUEJe-gHaKL?rs=1&pid=ImgDetMain"
+                            alt="Book Image" class="book-image">
+                    </div>
+                </td>
+                <td>18000 ل.س</td>
+                <td>قمر على الأريكة</td>
+                <td>987-6543210987</td>
+            </tr>
+
+            <!-- Book 2 -->
+            <tr>
+                <td><input type="radio" name="book" id="book2" value="الأسود يليق بك"></td>
+                <td>
+                    <button class="btn" onclick="toggleDetails(2)">إظهار التفاصيل</button>
+                    <div id="details2" class="book-details" style="display: none;">
+                        <strong>الكاتب:</strong> أحلام مستغانمي<br>
+                        <strong>نبذة عن الكتاب:</strong> "الأسود يليق بك" هو كتاب من الأدب المعاصر الذي يتناول قضايا
+                        الحب والخيبة.<br>
+                        <strong>السعر:</strong> 22000 ل.س<br>
+                        <strong>التصنيف:</strong> رواية<br>
+                        <strong>الناشر:</strong> دار الآداب<br>
+                        <strong>رقم ISBN:</strong> 123-9876543210<br>
+                        <img src="https://th.bing.com/th/id/OIP.Uxb56Xw0Ny2ipz0aUEJe-gHaKL?rs=1&pid=ImgDetMain"
+                            alt="Book Image" class="book-image">
+                    </div>
+                </td>
+                <td>22000 ل.س</td>
+                <td>الأسود يليق بك</td>
+                <td>123-9876543210</td>
+            </tr>
+
+            <!-- Book 3 -->
+            <tr>
+                <td><input type="radio" name="book" id="book3" value="أن تكون أنا"></td>
+                <td>
+                    <button class="btn" onclick="toggleDetails(3)">إظهار التفاصيل</button>
+                    <div id="details3" class="book-details" style="display: none;">
+                        <strong>الكاتب:</strong> نجيب محفوظ<br>
+                        <strong>نبذة عن الكتاب:</strong> "أن تكون أنا" هو كتاب يتناول موضوعات ذات طابع فلسفي
+                        وإنساني.<br>
+                        <strong>السعر:</strong> 24000 ل.س<br>
+                        <strong>التصنيف:</strong> فلسفة<br>
+                        <strong>الناشر:</strong> دار الشروق<br>
+                        <strong>رقم ISBN:</strong> 234-5678901234<br>
+                        <img src="https://th.bing.com/th/id/OIP.Uxb56Xw0Ny2ipz0aUEJe-gHaKL?rs=1&pid=ImgDetMain"
+                            alt="Book Image" class="book-image">
+                    </div>
+                </td>
+                <td>24000 ل.س</td>
+                <td>أن تكون أنا</td>
+                <td>234-5678901234</td>
+            </tr>
+
+            <!-- Book 4 -->
+            <tr>
+                <td><input type="radio" name="book" id="book4" value="في قبضة الأفق"></td>
+                <td>
+                    <button class="btn" onclick="toggleDetails(4)">إظهار التفاصيل</button>
+                    <div id="details4" class="book-details" style="display: none;">
+                        <strong>الكاتب:</strong> غادة السمان<br>
+                        <strong>نبذة عن الكتاب:</strong> "في قبضة الأفق" هو كتاب يروي رحلة الذات الإنسانية في البحث عن
+                        الأمل.<br>
+                        <strong>السعر:</strong> 21000 ل.س<br>
+                        <strong>التصنيف:</strong> أدب نفسي<br>
+                        <strong>الناشر:</strong> دار الجمل<br>
+                        <strong>رقم ISBN:</strong> 567-8901234567<br>
+                        <img src="https://th.bing.com/th/id/OIP.Uxb56Xw0Ny2ipz0aUEJe-gHaKL?rs=1&pid=ImgDetMain"
+                            alt="Book Image" class="book-image">
+                    </div>
+                </td>
+                <td>21000 ل.س</td>
+                <td>في قبضة الأفق</td>
+                <td>567-8901234567</td>
+            </tr>
+
+            <!-- Book 5 -->
+            <tr>
+                <td><input type="radio" name="book" id="book5" value="أفق المغامرة"></td>
+                <td>
+                    <button class="btn" onclick="toggleDetails(5)">إظهار التفاصيل</button>
+                    <div id="details5" class="book-details" style="display: none;">
+                        <strong>الكاتب:</strong> فؤاد حداد<br>
+                        <strong>نبذة عن الكتاب:</strong> "أفق المغامرة" هو كتاب يعرض تجارب في الحياة، وتناول مواضيع
+                        فلسفية مغامرة.<br>
+                        <strong>السعر:</strong> 23000 ل.س<br>
+                        <strong>التصنيف:</strong> مغامرة<br>
+                        <strong>الناشر:</strong> دار الكتاب العربي<br>
+                        <strong>رقم ISBN:</strong> 678-1234567890<br>
+                        <img src="https://th.bing.com/th/id/OIP.Uxb56Xw0Ny2ipz0aUEJe-gHaKL?rs=1&pid=ImgDetMain"
+                            alt="Book Image" class="book-image">
+                    </div>
+                </td>
+                <td>23000 ل.س</td>
+                <td>أفق المغامرة</td>
+                <td>678-1234567890</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="successMessage" class="success-message" style="display: none;">
+        <h3>تم الحجز بنجاح!</h3>
+        <p>لقد تم حجز الكتاب: <span id="chosenBook"></span></p>
+    </div>
+
+    <div class="form-container" id="form-container">
+        <h3>تسجيل بياناتك لشراء الكتاب</h3>
+        <form id="bookForm">
+            <label for="full-name">الاسم الكامل:</label>
+            <input type="text" id="full-name" name="full-name">
+
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="phone">رقم الهاتف:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="national-id">الرقم الوطني:</label>
+            <input type="text" id="national-id" name="national-id" required>
+
+            <label for="delivery-date">تاريخ التسليم:</label>
+            <input type="date" id="delivery-date" name="delivery-date">
+
+            <button type="submit">إرسال</button>
+        </form>
+    </div>
+
+    <div class="btn-container">
+        <button class="btn" onclick="showForm()">التسجيل للحصول على الكتاب</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
